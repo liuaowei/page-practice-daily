@@ -1,0 +1,485 @@
+/* 视口尺寸设置 */
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* 容器宽度 */
+.container {
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    height: 30px;
+    width: 100%;
+    background-color: #ECECEC;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    max-width: 1190px;
+}
+
+.topbar-left {
+    display: flex;
+}
+
+.topbar-left .title {
+    color: #666666;
+    font-size: 12px;
+}
+
+.topbar-left .title a {
+    color: #666666;
+    font-size: 12px;
+}
+
+.topbar-left .login-register {
+    font-size: 12px;
+    height: 12px;
+    margin-left: 28px;
+    align-items: center;
+}
+
+.topbar-left .login-register a {
+    color: #666666;
+    padding: 0 10px;
+}
+
+.topbar-left .login-register a:first-child {
+    padding-left: 0px;
+    border-right: 1px solid #666666;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    height: 30px;
+    /* 确保高度与 .topbar 一致 */
+}
+
+.topbar-right .nav-bar-item {
+    border-left: 1px solid #666666;
+    height: 16px;
+    font-size: 16px;
+    display: flex;
+    /* 确保 .nav-bar-item 也是 flex 容器 */
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+}
+
+.topbar-right .nav-bar-item a {
+    margin: 0 15px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.topbar-right .nav-bar-item:first-child {
+    border: none;
+}
+
+.topbar-right .nav-bar-item:first-child a {
+    margin-left: 0px;
+}
+
+.topbar-right .nav-bar-item:last-child a {
+    margin-right: 0px;
+}
+
+.logo-search {
+    display: flex;
+    width: 1190px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    
+}
+
+.logo img {
+    width: 190px;
+    height: 120px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    height: 36px;
+    border: 1px solid #DD302D;
+    width: 510px;
+}
+
+.search .search-button {
+    height: 36px;
+    width: 80px;
+    background-color: #DD302D;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* 底部栏 */
+.footer {
+    height: 440px;
+    width: 100%;
+    background-color: #483E3E;
+    color: #ffffff;
+    padding-top: 48px;
+    padding-bottom: 100px;
+}
+
+.info-area {
+    max-width: 1190px;
+    height: 198px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #584D4D;
+}
+
+.info-area .info-item {
+    
+}
+
+.info-area .info-item .service-link a {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* 商品分类栏头部start */
+
+.category-header {
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid #DD302D;
+}
+
+.category-header .header-content {
+    width: 1190px;
+    display: flex;
+    align-items: center;
+}
+
+.category-header .header-content .header-left {
+    padding: 13px 48px 13px 46px;
+    background-color: #dd302d;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.category-header .header-content .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.category-header .header-content .header-right .right-item {
+    padding: 13px 10px 12px 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* 商品分类栏头部end */
+
+
+/* banner区域start */
+.banner {
+    width: 1190px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 458px;
+}
+
+
+.banner .banner-left {
+    width: 190px;
+    height: 100%;
+    background-color: #F4F4F4;
+    padding: 9px 0px 9px 16px;
+}
+
+.banner .banner-left .left-item {
+    font-size: 14px;
+    padding-top: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner .banner-left .left-item:hover {
+    color: #DD302D;
+}
+
+.banner .banner-left .left-item:first-child {
+    padding-top: 0px;
+}
+
+.banner .banner-mid {
+    width: 690px;
+}
+
+.banner .banner-right {
+    width: 290px;
+}
+
+.banner .banner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .banner-right .right-top {
+    padding: 0 14px;
+    height: 158px;
+    width: 290px;
+    border: 1px solid #D9D9D9;
+}
+
+.banner .banner-right .right-top .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.banner .banner-right .right-top .title .title-left {
+    
+}
+
+.banner .banner-right .right-top .title .title-right a {
+    font-size: 12px;
+}
+
+.banner .banner-right .right-top .info {
+}
+
+.banner .banner-right .right-top .info .info-item {
+    padding-top: 12px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.banner .banner-right .right-top .info .info-item:first-child {
+    padding-top: 8px;
+}
+
+.banner .banner-right .right-bottom {
+    margin-top: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.banner .banner-right .right-bottom .bottom-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .banner-right .right-bottom .bottom-line .bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .banner-right .right-bottom .bottom-line .bottom-item .title {
+    font-size: 14px;
+}
+
+
+ /* banner区域end */
+
+
+
+
+/* 连续banner区域start */
+
+.banner-list {
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    width: 1190px;
+}
+
+/* 连续banner区域end */
+
+
+
+
+/* 家用电器栏start */
+.electric-area {
+    max-width: 1190px;
+}
+
+.electric-area .electric-area-header {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #DD302D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.electric-area .electric-area-header .title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.electric-area .electric-area-header .nav {
+    
+}
+
+.electric-area .electric-area-header .nav .nav-item {
+    height: 16px;
+    
+}
+
+.electric-area .electric-area-header .nav .nav-item a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    padding: 0 10px;
+    border-right: 1px solid #666666;
+}
+
+.electric-area .electric-area-header .nav .nav-item a:first-child {
+    color:#DD302D;
+    padding-left: 0px;
+}
+
+.electric-area .electric-area-header .nav .nav-item a:last-child {
+    padding-right: 0px;
+    border: none;
+}
+
+.electric-area .electric-content {
+    display: flex;
+    align-items: center;
+    height: 432px;
+}
+
+.electric-area .electric-content .content1 {
+    padding: 20px 20px 32px 20px;
+    background-color: #F4F4F4;
+    height: 432px;
+}
+
+.electric-area .electric-content .content1 .top {
+    margin-bottom: 30px;
+}
+
+.electric-area .electric-content .content1 .top .top-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.electric-area .electric-content .content1 .top .top-item .item {
+    width: 90px;
+    text-align: center;
+    line-height: 25.5px;
+    font-size: 16px;
+    padding-top: 15px;
+    border-bottom: 1px solid #D9D9D9;
+    color: #666666;
+}
+
+.electric-area .electric-content .content1 .top .top-item:first-child .item {
+    padding-top: 0px;
+}
+
+.electric-area .electric-content .content1 img {
+    width: 194px;
+    height: 242px;
+}
+
+.electric-area .electric-content .content2 {
+    height: 432px;
+    width: 340px;
+}
+
+.electric-area .electric-content .content3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.electric-area .electric-content .content4 {
+    height: 432px;
+    width: 206px;
+}
+
+.electric-area .electric-content .content5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 家用电器栏end */
+
+/* 底部栏开始start */
+.footer-link {
+    max-width: 1190px;
+    padding-top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#ffffff;
+}
+
+.footer-link .footer-link-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 可选，确保文字在块级元素中居中 */
+    border-right: 1px solid #ffffff;
+    height: 12px;
+}
+
+.footer-link .footer-link-item a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.footer-link .footer-link-item:last-child {
+    border: none;
+}
+
+.footer-code {
+    padding-top: 10px;
+    max-width: 1190px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    text-align: center;
+    /* 可选，确保文字在块级元素中居中 */
+    font-size: 12px;
+}
+/* 底部栏结束end */
