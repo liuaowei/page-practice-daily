@@ -36,6 +36,7 @@
 .topbar-left .title a {
     color: #666666;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .topbar-left .login-register {
@@ -43,11 +44,13 @@
     height: 12px;
     margin-left: 28px;
     align-items: center;
+    white-space: nowrap;
 }
 
 .topbar-left .login-register a {
     color: #666666;
     padding: 0 10px;
+    white-space: nowrap;
 }
 
 .topbar-left .login-register a:first-child {
@@ -73,12 +76,14 @@
     /* 垂直居中 */
     justify-content: center;
     /* 水平居中 */
+    /* flex-wrap: nowrap; */
 }
 
 .topbar-right .nav-bar-item a {
     margin: 0 15px;
     font-size: 12px;
     color: #666666;
+    white-space: nowrap;
 }
 
 .topbar-right .nav-bar-item:first-child {
@@ -343,6 +348,7 @@
 .electric-area .electric-area-header .title {
     font-size: 20px;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 .electric-area .electric-area-header .nav {
@@ -351,7 +357,7 @@
 
 .electric-area .electric-area-header .nav .nav-item {
     height: 16px;
-    
+    white-space: nowrap;
 }
 
 .electric-area .electric-area-header .nav .nav-item a {
@@ -449,6 +455,7 @@
 
 .footer-link .footer-link-item {
     display: flex;
+    flex-wrap: nowrap;
     flex: 1;
     align-items: center;
     /* 垂直居中 */
@@ -463,6 +470,7 @@
 .footer-link .footer-link-item a {
     color: #ffffff;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .footer-link .footer-link-item:last-child {
@@ -483,3 +491,21 @@
     font-size: 12px;
 }
 /* 底部栏结束end */
+
+/* 媒体查询 */
+/* 在小屏幕设备上调整字体大小 */
+@media (max-width: 600px) {
+    .topbar-right .nav-bar-item {
+        font-size: 14px;
+        /* 减小字体大小 */
+    }
+}
+
+/* 在中等屏幕设备上调整字体大小 */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .topbar-right .nav-bar-item {
+        font-size: 15px;
+        /* 调整字体大小 */
+    }
+}
+
