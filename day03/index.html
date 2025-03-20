@@ -24,7 +24,63 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: pink;
+            transition: font-size 0.5s ease;
+        }
+        
+        /* 小屏幕手机 */
+        @media (max-width: 480px) {
+            .child {
+                font-size: 16px;
+            }
+        }
+
+        /* 中等屏幕手机 */
+        @media (min-width: 481px) and (max-width: 600px) {
+            .child {
+                font-size: 18px;
+            }
+        }
+
+        /* 大屏幕手机 */
+        @media (min-width: 601px) and (max-width: 768px) {
+            .child {
+                font-size: 20px;
+            }
+        }
+
+        /* 小屏幕平板 */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .child {
+                font-size: 24px;
+            }
+        }
+
+        /* 大屏幕平板 */
+        @media (min-width: 1025px) and (max-width: 1200px) {
+            .child {
+                font-size: 28px;
+            }
+        }
+
+        /* 小屏幕桌面 */
+        @media (min-width: 1201px) and (max-width: 1440px) {
+            .child {
+                font-size: 32px;
+            }
+        }
+
+        /* 中等屏幕桌面 */
+        @media (min-width: 1441px) and (max-width: 1920px) {
+            .child {
+                font-size: 36px;
+            }
+        }
+
+        /* 大屏幕桌面 */
+        @media (min-width: 1921px) {
+            .child {
+                font-size: 40px;
+            }
         }
     </style>
 </head>
