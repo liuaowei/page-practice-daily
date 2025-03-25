@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+.page-container {
+  min-height: 100vh;
+}
+
+/* 头部  start*/
+
 header {
   height: 30px;
   background-color: #ececec;
@@ -14,6 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .topbar-left {
@@ -44,7 +51,7 @@ header {
 
 .topbar-left .login-register .login {
   padding-right: 10px;
-  border-right: 1px solid black;
+  border-right: 1px solid #666666;
 }
 
 .topbar-left .login-register .register {
@@ -54,5 +61,129 @@ header {
 .topbar-right {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  justify-content: center;
 }
+
+.topbar-right .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-right: 1px solid #666666;
+}
+
+.topbar-right .nav-item:last-child {
+  border-right: none;
+  padding-right: 0px;
+}
+
+.topbar-right .nav-item span {
+  font-size: 12px;
+  line-height: 12px;
+  color: #666666;
+}
+
+/* 头部 结束 end */
+
+/* search start */
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-left {
+}
+
+.search-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-right input {
+  border: 1px solid #dd302d;
+  width: 510px;
+  height: 36px;
+}
+
+.search-right .search-button {
+  width: 80px;
+  height: 36px;
+  background-color: #dd302d;
+  padding: 6px 28px;
+  cursor: pointer;
+}
+
+/* search end */
+
+/* tab start */
+
+.tab {
+  border-bottom: 1px solid #dd302d;
+}
+
+.tab-area {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.tab-area .tab-header {
+  width: 190px;
+  background: #dd302d;
+  text-align: center;
+}
+
+.tab-area .tab-header span {
+  line-height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.tab-area .tab-nav {
+}
+
+.tab-area .tab-nav .nav-item {
+  padding: 0 10px;
+}
+.tab-area .tab-nav .nav-item span {
+  color: #333333;
+}
+
+/* tab end */
+
+/* footer start */
+.footer {
+  min-height: 440px;
+  background-color: #483e3e;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer .footer-container {
+  padding-top: 48px;
+  padding-bottom: 100px;
+}
+
+.footer .footer-container .link-area {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.footer .footer-container .link-area .link-list {
+  width: 190px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-container .link-area .link-list .link-item {
+  padding: 3px 0;
+}
+
+.footer .footer-container .link-area .link-list .link-item span {
+  color: #ffffff;
+}
+
+/* footer end */
